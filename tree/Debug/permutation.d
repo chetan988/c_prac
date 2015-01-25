@@ -1,1 +1,0 @@
-permutation.d: ../permutation.c
