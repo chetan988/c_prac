@@ -3,6 +3,7 @@
 #include "tree.h"
 #include "stack.h"
 
+void printRange_2 (struct tree *,int, int);
 void findMinMax(struct tree *, int *, int *, int);
 void traverseVertically(struct tree *,int,int);
 void printarr(int *,int);
@@ -657,4 +658,46 @@ void display_tree_with_sibling(struct tree_with_sibling *root) {
 		printf("NULL\n");			
 		root = root->left;
 	}
+}
+
+// same principle can be applied for level order traversal
+// only push root->left in queue if root->data >= k1
+// and push root->right id root->data <= k2
+void printRange_2 (struct tree *root,int k1, int k2) {
+	struct queue *q = createqueue(15);
+	enqueue(q,root);
+	while(q->rear != -1) {
+	//	printf("processing : %d\n",root->data);
+		root = dequeue(q);
+		if(root->data >= k1 && root->left != NULL)
+			enqueue(q,root->left);
+		if(root->data <= k2 && root->right != NULL)
+			enqueue(q,root->right);
+		if(root->data >= k1 && root->data <= k2)
+			printf(" % d ",root->data);
+	}
+	deletequeue(q);
+}
+
+
+int isAVL(struct tree *root) {
+
+	int left,right;
+	left = isAVL(root->left);
+	if(!(left))
+		return 0;
+	right = isAVL(root->right);
+	if(!(right))
+		return 0;
+	if(abs(left - right) > 1)
+		return 0;
+	else
+		return max(left,right) + 1;
+}
+
+int max(int a, int b){
+
+	if(a > b)
+		return a;
+	else return b;
 }

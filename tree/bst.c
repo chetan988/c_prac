@@ -21,7 +21,9 @@ struct tree *findMidOfDll(struct tree *);
 
 struct tree * findkthsmallele(struct tree *,int);
 void printRange_1 (struct tree *,int,int);
+void printRange_2 (struct tree *,int, int);
 
+int checkTwoBST(struct tree *, struct tree *);
 // 		end function declaration
 
 // global variable
@@ -32,7 +34,7 @@ int count;
 
 int main() {
 	struct tree *root=NULL,*binary_tree_root=NULL,*dll_tail=NULL;
-	struct tree *dll_head = NULL,*temp;
+	struct tree *dll_head = NULL,*temp,*root1=NULL,*root2=NULL;
 	int choice,i,min,max,status,element,val;
 	char ch='y';
 	int arr[11] = {40,5,20,30,25,50,10,1,45,60,41};
@@ -53,7 +55,8 @@ int main() {
 		printf("11. transfer binary tree to double linklist\n");
 		printf("12. transfer a DLL to tree\n");
 		printf("13. find the kth element\n");
-		printf("14. print all emement between range k1 and k2\n");
+		printf("14. print all element between range k1 and k2\n");
+		printf("15. match two BST\n");
 		printf("Enter any key other than choice to exit\n");
 		printf("\nEnter your choice? ");
 		scanf("%d", &choice);
@@ -169,7 +172,26 @@ int main() {
 			case 14:
 				printf("enter the value of k1 and k2\n");
 				scanf("%d %d",&min,&max);
+				printf("elements inbetween %d and %d are : \n",min,max);
 				printRange_1 (root,min,max);
+				printf("\ntry 2\n");
+				printRange_2 (root,min,max);
+				break;
+			case 15:
+				printf("create 1st BST: ");
+				createBst(&root1);
+				printf("create 2nd BST: ");
+				createBst(&root2);
+				r_inorder(root1);
+				printf("\n");
+				r_inorder(root2);
+				printf("\n");
+				// 10 5 4 8 and 5 8 4 10 are similar BST
+				if(checkTwoBST(root1, root2))
+					printf("Both BST have same value nodes\n");
+				else
+					printf("Both tree have dissimilar nodes\n");
+
 				break;
 			default:
 				printf("Exiting....\n");
@@ -512,7 +534,8 @@ struct tree * findkthsmallele(struct tree *root,int kth) {
 		return root;
 	return findkthsmallele(root->right,kth);
 }
-
+// here we are traversing inorder but filtering out the root->left traversal where root->data < k1 because
+// they will be always small similarly root->right can be neglected for nodes where root->data > k2
 void printRange_1 (struct tree *root,int k1, int k2) {
 	if(root == NULL)
 		return;
@@ -522,5 +545,40 @@ void printRange_1 (struct tree *root,int k1, int k2) {
 		printf(" %d ",root->data);
 	if(root->data <= k2)
 		printRange_1 (root->right,k1,k2);
+}
+
+//traverse root1 and root2 in inorder fashon if both tree are contain same nodes then both data will match
+// because inorder will produce sorted list
+int checkTwoBST(struct tree *root1, struct tree *root2) {
+	int flag=1;
+	struct stack *s1 =createStack(15);
+	struct stack *s2 =createStack(15);
+	while(1) {
+		while(root1 != NULL) {
+			push(s1,root1);
+			root1=root1->left;
+		}
+		while(root2 != NULL) {
+			push(s2,root2);
+			root2=root2->left;
+		}
+		if(s1->top == -1 || s2->top == -1) {
+			if(s1->top != -1 || s2->top != -1){
+				flag= 0; // one of the tree is shoter than other that means mismatch element
+				break;
+			}
+			if(s1->top == -1 && s2->top == -1)
+				break;
+		}
+		root1 = pop(s1);
+		root2 = pop(s2);
+		if(root1->data != root2->data)
+			flag=0;
+		root1=root1->right;
+		root2=root2->right;
+		if(flag == 0)
+			break;
+	}
+	return flag;
 }
 
