@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+     
+    int n,i,j,k,count;
+    char input[50000];
+    scanf("%d",&n);
+    for(k=0;k<n;k++) {
+        scanf("%s",input);
+        j = strlen(input) -1;
+        i=0;
+        count=0;
+        while(i < j) {
+            
+            if(input[i] > input[j]) {
+                input[i]--;
+                count++;
+            }
+            else if(input[i] < input[j]) {
+                input[j]--;
+                count++;
+            }
+            else {
+                i++;
+                j--;
+            }
+        }
+        printf("%d\n",count);
+    }
+    
+    return 0;
+}
+

@@ -1,0 +1,50 @@
+http://www.9wy.net/onlinebook/CPrimerPlus5/ch11lev1sec2.html
+
+
+http://www.indiabix.com/technical/c/the-c-language-basics/3   ------ intv questions
+
+http://placement.freshersworld.com/power-preparation/technical-interview-questions/C-programming-answers-21419   --- intv question
+
+
+
+http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
+http://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+http://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/
+http://www.geeksforgeeks.org/check-for-children-sum-property-in-a-binary-tree/
+http://www.geeksforgeeks.org/maximum-width-of-a-binary-tree/
+http://www.geeksforgeeks.org/foldable-binary-trees/
+http://www.geeksforgeeks.org/get-level-of-a-node-in-a-binary-tree/
+http://www.geeksforgeeks.org/print-ancestors-of-a-given-node-in-binary-tree/
+http://www.geeksforgeeks.org/check-if-a-binary-tree-is-subtree-of-another-binary-tree/
+http://www.geeksforgeeks.org/populate-inorder-successor-for-all-nodes/
+http://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+http://www.geeksforgeeks.org/iterative-postorder-traversal/
+http://www.geeksforgeeks.org/given-linked-list-representation-of-complete-tree-convert-it-to-linked-representation/
+http://www.geeksforgeeks.org/tree-isomorphism-problem/
+http://www.geeksforgeeks.org/difference-between-sums-of-odd-and-even-levels/
+
+http://www.geeksforgeeks.org/find-depth-of-the-deepest-odd-level-node/    -> twik of get level of a node
+
+http://www.geeksforgeeks.org/check-leaves-level/
+
+http://www.geeksforgeeks.org/print-left-view-binary-tree/
+
+http://www.geeksforgeeks.org/remove-all-nodes-which-lie-on-a-path-having-sum-less-than-k/
+
+http://www.geeksforgeeks.org/deepest-left-leaf-node-in-a-binary-tree/
+http://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/
+
+http://www.geeksforgeeks.org/sum-numbers-formed-root-leaf-paths/
+
+http://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/
+http://www.geeksforgeeks.org/find-distance-two-given-nodes/
+
+http://www.geeksforgeeks.org/print-nodes-distance-k-leaf-node/
+http://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/
+http://www.geeksforgeeks.org/find-maximum-path-sum-two-leaves-binary-tree/
+
+http://www.geeksforgeeks.org/check-binary-tree-subtree-another-binary-tree-set-2/
+
+http://www.geeksforgeeks.org/convert-binary-tree-threaded-binary-tree/
+
+http://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/   -> level order with queue print first and last at that level 

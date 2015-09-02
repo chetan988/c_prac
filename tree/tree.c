@@ -66,7 +66,7 @@ void enqueue (struct queue* s,struct tree *val){
 struct tree* dequeue(struct queue* s) {
   struct tree *temp;
   if(s->front == -1) {
-    printf("queue is empty\nqueueunderflow occured\n");
+    printf("queue is empty\nqueueunder flow occured\n");
     return temp;
   }
   else {

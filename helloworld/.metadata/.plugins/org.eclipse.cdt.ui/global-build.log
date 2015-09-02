@@ -1,0 +1,85 @@
+
+**** Build of configuration Debug for project tree ****
+
+make all 
+Building target: tree
+Invoking: GCC C Linker
+gcc  -o "tree"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./bst.o ./expression_tree.o ./permutation.o ./tree.o ./tree_basics.o   
+./expression_tree.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../expression_tree.c:11: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./permutation.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../permutation.c:7: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./tree_basics.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../tree_basics.c:6: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./expression_tree.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../expression_tree.c:15: warning: the `gets' function is dangerous and should not be used.
+collect2: error: ld returned 1 exit status
+make: *** [tree] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tree ****
+
+make all 
+Building file: ../bst.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bst.d" -MT"bst.d" -o "bst.o" "../bst.c"
+../bst.c: In function ‘main’:
+../bst.c:48:5: error: a label can only be part of a statement and a declaration is not a statement
+     int i,arr[] = {40,5,20,30,25,50,10,1,45,60};
+     ^
+make: *** [bst.o] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tree ****
+
+make all 
+Building file: ../bst.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bst.d" -MT"bst.d" -o "bst.o" "../bst.c"
+Finished building: ../bst.c
+ 
+Building target: tree
+Invoking: GCC C Linker
+gcc  -o "tree"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./bst.o ./expression_tree.o ./permutation.o ./tree.o ./tree_basics.o   
+./expression_tree.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../expression_tree.c:11: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./permutation.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../permutation.c:7: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./tree_basics.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../tree_basics.c:6: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./expression_tree.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../expression_tree.c:15: warning: the `gets' function is dangerous and should not be used.
+collect2: error: ld returned 1 exit status
+make: *** [tree] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project tree ****
+
+make all 
+Building target: tree
+Invoking: GCC C Linker
+gcc  -o "tree"  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  ./bst.o ./expression_tree.o ./permutation.o ./tree.o ./tree_basics.o   
+./expression_tree.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../expression_tree.c:11: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./permutation.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../permutation.c:7: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./tree_basics.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../tree_basics.c:6: multiple definition of `main'
+./bst.o:/home/chetan/myc/helloworld/tree/Debug/../bst.c:8: first defined here
+./expression_tree.o: In function `main':
+/home/chetan/myc/helloworld/tree/Debug/../expression_tree.c:15: warning: the `gets' function is dangerous and should not be used.
+collect2: error: ld returned 1 exit status
+make: *** [tree] Error 1
+
+**** Build Finished ****

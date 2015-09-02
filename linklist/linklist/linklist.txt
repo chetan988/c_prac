@@ -1,0 +1,1 @@
+./Debug/insertnode.c.o ./Debug/even_odd_arrange.c.o   

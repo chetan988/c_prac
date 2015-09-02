@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.cdt.ui.CElementWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1421586724677_1" label="bst" name="bst">
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/tree/bst.c" type="1"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/tree/stack.h" type="1"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/tree/tree.c" type="1"/>
+<item factoryID="org.eclipse.cdt.ui.PersistableCElementFactory" path="/tree/tree.h" type="1"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1421573153945_0" label="Window Working Set" name="Aggregate for window 1421573153943"/>
+<mruList name="bst"/>
+</workingSetManager>

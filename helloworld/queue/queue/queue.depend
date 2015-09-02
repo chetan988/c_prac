@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1418835688 source:e:\backup\recoveryufd\myc\helloworld\queue\queue\main.c
+	<stdio.h>
+	<stdlib.h>
+	"queue.h"
+
+1418832145 e:\backup\recoveryufd\myc\helloworld\queue\queue\queue.h
+
+1418835638 source:e:\backup\recoveryufd\myc\helloworld\queue\queue\queue.c
+	<stdio.h>
+	<stdlib.h>
+	"queue.h"
+

@@ -88,4 +88,5 @@ int isBST(struct tree *);
 int isBST_1(struct tree *);
 int isBST_2(struct tree *);
 int isBST_3(struct tree *);
+int isAVL (struct tree *);
 #endif

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1417849131 e:\backup\recoveryufd\myc\helloworld\stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1417849064 e:\backup\recoveryufd\myc\helloworld\stack\stack.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1417848022 e:\backup\recoveryufd\myc\helloworld\stack\stack.h
+
+1417849064 source:e:\backup\recoveryufd\myc\helloworld\stack\stack.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1417849131 source:e:\backup\recoveryufd\myc\helloworld\stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
